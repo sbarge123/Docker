@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page</title>
+  <h2><a href="http://35.87.74.233:32776/student/"><strong>Enter to Student Application</strong></a></h2>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .student {
+      width: calc(50% - 20px);
+      margin-bottom: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .student:hover {
+      transform: translateY(-5px);
+    }
+    .student img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .student-info {
+      padding: 20px;
+    }
+    .student-info h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .student-info p {
+      margin: 0;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .student-info a {
+      display: inline-block;
+      color: #fff;
+      background-color: #333;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .student-info a:hover {
+      background-color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .student {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Page</h1>
+  </header>
+
+  <div class="container">
+    <div class="student">
+      <img src="student1.jpg" alt="Student 1">
+      <div class="student-info">
+        <h2>John Doe</h2>
+        <p>Age: 20</p>
+        <p>Major: Computer Science</p>
+        <a href="john_doe_profile.html">View Profile</a>
+        <img src="https://th.bing.com/th?id=OIP.SyQPoSWrtzvjdZkQKJdIJQHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2">
+      </div>
+    </div>
+
+    <div class="student">
+      <img src="student2.jpg" alt="Student 2">
+      <div class="student-info">
+        <h2>Jane Smith</h2>
+        <p>Age: 22</p>
+        <p>Major: Biology</p>
+        <a href="jane_smith_profile.html">View Profile</a>
+        <img src="https://th.bing.com/th?id=OIP.P3ivrufDhFVothMgVdhoWwHaFT&w=295&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2">
+      </div>
+    </div>
+    <!-- Add more student profiles as needed -->
+  </div>
+
+</body>
+</html>
